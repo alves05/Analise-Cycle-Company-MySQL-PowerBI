@@ -7,7 +7,7 @@ insert into employee values ('John', 'B', 'Smith', 123456789, '1965-01-09', '731
                             ('Ramesh', 'K', 'Narayan', 666884444, '1962-09-15', '975-Fire-Oak-Humble-TX', 'M', 3800, 333445555, 5),
                             ('Joyce', 'A', 'English', 453453453, '1972-07-31', '5631-Rice-Houston-TX', 'F', 2500, 333445555, 5),
                             ('Ahmad', 'V', 'Jabbar', 987987987, '1969-03-29', '980-Dallas-Houston-TX', 'M', 2500, 987654321, 4),
-                            ('James', 'E', 'Borg', 888665555, '1937-11-10', '450-Stone-Houston-TX', 'M', 5500, 888665555, 1);
+                            ('James', 'E', 'Borg', 888665555, '1937-11-10', '450-Stone-Houston-TX', 'M', 5500, NULL, 1);
                             
 insert into departament values ('Research', 5, 333445555, '1988-05-22','1986-05-22'),
 							   ('Administration', 4, 987654321, '1995-01-01','1994-01-01'),
