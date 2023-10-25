@@ -2,14 +2,21 @@
 
 ### Esse projeto explora conceitos de análise de dados, utilizando extração de dados do Mysql e realizando a transformação dos dados usando o Power BI, e por fim, criando um dashboard que possibilita a análise dos setores da empresa do case. 
 
-**Arquivos**:
+Esse projeto é minha proposta de resolução para o desafio *Processando e Transformando Dados com Power BI* do programa **<span style="color:orange">Santander Bootcamp 2023 - Ciência de dados com Python</span>** oferecido pela [DIO.me](https://web.dio.me/).
+
+**Dados base para o projeto**:
+
+- [Dados Base](https://github.com/julianazanelatto/power_bi_analyst/tree/main/Módulo%203/Desafio%20de%20Projeto)
+
+
+**Arquivos do Projeto**:
  - [Arquivo PBIX](./relatorio_powerbi/)
  - [Arquivos SQL](./scripts_sql/)
  - [Estrutura dos Dados](./scripts_sql/esquema_relacional_bd.jpg)
  - [Template do Dashboard](./template/layout.png)
 
  ## Dashboard Desenvolvido
-***Clique na imagem para abrir o relatório***
+**<span style="color:turquoise">Clique na imagem para abrir o relatório</span>**
 
  [<img src='./template/relatorio.jpg'>](https://app.powerbi.com/view?r=eyJrIjoiZGVmMDhlYjgtYzQ4YS00NTE1LWE1YWYtMzhkOTg4OWM3MGNkIiwidCI6ImMxNDA5NGQwLTA0ZTMtNGM2YS1iMTM0LTg4ZTUxZDMwOWZmYyJ9)
 
@@ -152,7 +159,7 @@ show tables;
 ```
 </details>
 
-## Realizando consultas SQL no bano de dados
+## Realizando Consultas SQL no Banco de Dados
 
 ### <sumamary>Consulta tabela employee:</summary>
 
