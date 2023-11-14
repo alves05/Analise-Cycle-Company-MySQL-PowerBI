@@ -37,8 +37,9 @@ Podemos observar que se trata de uma estrutura de dados relacional.
 
 ## Criação do Banco de Dados e suas Tabelas
 
-### <sumamary>1. Criando o banco de dados:</summary>
+
 <details>
+<summary>1. Criando o banco de dados:</summary>
 
 ```
 create schema if not exists company_cycle_employee;
@@ -47,9 +48,8 @@ use company_cycle_employee;
 ```
 </details>
 
-
-### <sumamary>2. Criando tabela 'employee':</summary>
 <details>
+<summary>2. Criando tabela 'employee':</summary>
 
 ```
 CREATE TABLE employee(
@@ -69,8 +69,8 @@ constraint pk_employee primary key(Ssn)
 ```
 </details>
 
-### <sumamary>3. Criando tabela 'departament':</summary>
 <details>
+<summary>3. Criando tabela 'departament':</summary>
 
 ```
 create table departament(
@@ -89,8 +89,8 @@ on update cascade
 ```
 </details>
 
-### <sumamary>4. Criando tabela 'dept_locations':</summary>
 <details>
+<summary>4. Criando tabela 'dept_locations':</summary>
 
 ```
 create table dept_locations(
@@ -104,8 +104,8 @@ on update cascade
 ```
 </details>
 
-### <sumamary>5. Criando tabela 'project':</summary>
 <details>
+<summary>5. Criando tabela 'project':</summary>
 
 ```
 create table project(
@@ -120,8 +120,8 @@ constraint fk_project foreign key (Dnum) references departament(Dnumber)
 ```
 </details>
 
-### <sumamary>6. Criando tabela 'works_on':</summary>
 <details>
+<summary>6. Criando tabela 'works_on':</summary>
 
 ```
 create table works_on(
@@ -135,8 +135,8 @@ constraint fk_project_works_on foreign key (Pno) references project(Pnumber)
 ```
 </details>
 
-### <sumamary>7. Criando tabela 'dependent':</summary>
 <details>
+<summary>7. Criando tabela 'dependent':</summary>
 
 ```
 create table dependent(
@@ -151,8 +151,8 @@ constraint fk_dependent foreign key (Essn) references employee(Ssn)
 ```
 </details>
 
-### <sumamary>8. Visualizando todas as tabelas criadas:</summary>
 <details>
+<summary>8. Visualizando todas as tabelas criadas:</summary>
 
 ```
 show tables;
@@ -161,63 +161,58 @@ show tables;
 
 ## Realizando Consultas SQL no Banco de Dados
 
-### <sumamary>Consulta tabela employee:</summary>
 
 <details>
+<summary>Consulta tabela employee:</summary>
 
 ``` 
 select * from employee;
 ```
 </details>
 
-### <sumamary>Consulta tabela departament:</summary>
-
 <details>
+<summary>Consulta tabela departament:</summary>
 
 ``` 
 select * from departament;
 ```
 </details>
 
-### <sumamary>Consulta tabela dept_locations:</summary>
-
 <details>
+<summary>Consulta tabela dept_locations:</summary>
 
 ``` 
 select * from dept_locations;
 ```
 </details>
 
-### <sumamary>Consulta tabela project:</summary>
-
 <details>
+<summary>Consulta tabela project:</summary>
 
 ``` 
 select * from project;
 ```
 </details>
 
-### <sumamary>Consulta tabela works_on:</summary>
-
 <details>
+<summary>Consulta tabela works_on:</summary>
 
 ``` 
 select * from works_on;
 ```
 </details>
 
-### <sumamary>Consulta tabela dependent:</summary>
-
 <details>
+<summary>Consulta tabela dependent:</summary>
 
 ``` 
 select * from dependent;
 ```
 </details>
 
-### <sumamary>Consulta dados dos funcionarios e seus gerentes:</summary>
 
 <details>
+<summary>Consulta dados dos funcionarios e seus gerentes:</summary>
 
 ``` 
 select
@@ -235,9 +230,9 @@ left join employee m on e.Super_ssn = m.Ssn;
 ```
 </details>
 
-### <sumamary>Consulta projtos e localização:</summary>
 
 <details>
+<summary>Consulta projtos e localização:</summary>
 
 ``` 
 select 
@@ -247,9 +242,8 @@ where Pnumber = Pno;
 ```
 </details>
 
-### <sumamary>Consulta projetos, funcionarios, departamento e projetos:</summary>
-
 <details>
+<summary>Consulta projetos, funcionarios, departamento e projetos:</summary>
 
 ``` 
 select 
@@ -264,9 +258,9 @@ inner join project p on p.Dnum = f.Dno;
 ```
 </details>
 
-### <sumamary>Consulta gerentes:</summary>
 
 <details>
+<summary>Consulta gerentes:</summary>
 
 ``` 
 select 
@@ -276,9 +270,9 @@ inner join departament d on e.Ssn = d.Mgr_ssn;
 ```
 </details>
 
-### <sumamary>Consulta funcionarios por projeto e horas trabalhadas:</summary>
 
 <details>
+<summary>Consulta funcionarios por projeto e horas trabalhadas:</summary>
 
 ``` 
 select
@@ -291,9 +285,9 @@ where Essn = Ssn and Pnumber = Pno;
 ```
 </details>
 
-### <sumamary>Consulta dados dos funcionários:</summary>
 
 <details>
+<summary>Consulta dados dos funcionários:</summary>
 
 ``` 
 select 
@@ -311,9 +305,9 @@ from employee;
 ```
 </details>
 
-### <sumamary>Consulta funcionarios com dependentes:</summary>
 
 <details>
+<summary>Consulta funcionarios com dependentes:</summary>
 
 ``` 
  select
